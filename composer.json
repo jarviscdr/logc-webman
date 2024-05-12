@@ -1,0 +1,14 @@
+{
+  "name": "jarviscdr/logc-webman",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin jarviscdr/logc-webman",
+  "require": {
+    "jarviscdr/logc-client": "^0.1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Jarviscdr\\LogcWebman\\": "src"
+    }
+  }
+}
