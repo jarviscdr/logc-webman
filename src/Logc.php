@@ -25,11 +25,13 @@ class Logc implements \Webman\Bootstrap {
         $apiHost        = config('plugin.jarviscdr.logc-webman.app.api_host');
         $apiTimeout     = config('plugin.jarviscdr.logc-webman.app.api_timeout');
         $prjectName     = config('plugin.jarviscdr.logc-webman.app.project');
+        $tags           = config('plugin.jarviscdr.logc-webman.app.tags');
         $throwException = config('plugin.jarviscdr.logc-webman.app.throw_exception');
 
         Client::getInstance()
             ->setApiClient($apiHost, $apiTimeout)
             ->setThrowException($throwException)
-            ->setProject($prjectName);
+            ->setProject($prjectName)
+            ->setTags($tags);
     }
 }
